@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Bellota Text', cursive;
+}
+body {
+				background: #f2f3f7;
+}
+.tittle {
+				text-align: center;
+				margin-top: 40px;
+				margin-bottom: 20px;
+				font-size: 25px;
+				font-weight: bolder;
+				position: relative;
+}
+.tittle::after {
+				content: "";
+				position: absolute;
+				width: 40%;
+				height: 2px;
+				background-image: linear-gradient(to left, transparent 5%, #726a95);
+				bottom: -10px;
+				left: 53%;
+				transform: translateX(-50%);
+}
+.body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100%;
+}
+.container
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.container .card
+{
+   width: 300px;
+   height: 380px;
+   padding: 30px;
+   margin: 30px;
+   background: #f2f3f7;
+   box-shadow: 0.6em 0.6em 1.2em #d2dce9,
+               -0.5em -0.5em 1em #ffffff;
+   border-radius: 20px;
+}
+.container .card .content
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.container .card .content .imgBx
+{
+   width: 160px;
+   height: 160px;
+   border-radius: 50%;
+   position: relative;
+   margin-bottom: 20px;
+   overflow: hidden;
+}
+.container .card .content .imgBx img
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.container .card .content .contentBx h4
+{
+   color: #36187d;
+   font-size: 1.7rem;
+   font-weight: bold;
+   text-align: center;
+   letter-spacing: 1px;
+}
+.container .card .content .contentBx h5
+{
+   color: #6c758f;
+   font-size: 1.2rem;
+   font-weight: bold;
+   text-align: center;
+}
+.container .card .content .info
+{
+   margin-top: 20px;
+}
+.container .card .content .info span {
+				color: red;
+				font-family: 'Roboto';
+				font-size: 20px;
+				text-decoration: underline;
+}
+
+/*   colors
+        #f2f3f7
+        #d2dce9
+        #36187d
+        #6c758f
+        #0196e3
+ */
